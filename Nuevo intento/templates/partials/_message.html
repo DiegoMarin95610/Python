@@ -1,0 +1,15 @@
+{% with messages = get_flashed_messages() %} 
+    {% if messages %} 
+        {% for message in messages %}
+        
+            <div class="alert1">
+            <span class="closebtn1" onclick="this.parentElement.style.display='none';"
+                >&times;</span
+            >
+            <strong>Correcto</strong>{{ message }}
+            </div>
+
+        {% endfor %} 
+    {% endif %} 
+{% endwith %}
+    
